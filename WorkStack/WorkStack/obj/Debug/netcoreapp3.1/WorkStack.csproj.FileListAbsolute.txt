@@ -1,0 +1,15 @@
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\WorkStack\WorkStack\obj\Debug\netcoreapp3.1\WorkStack.csprojAssemblyReference.cache
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\WorkStack\WorkStack\obj\Debug\netcoreapp3.1\WorkStack.Form1.resources
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\WorkStack\WorkStack\obj\Debug\netcoreapp3.1\WorkStack.csproj.GenerateResource.cache
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\WorkStack\WorkStack\obj\Debug\netcoreapp3.1\WorkStack.AssemblyInfoInputs.cache
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\WorkStack\WorkStack\obj\Debug\netcoreapp3.1\WorkStack.AssemblyInfo.cs
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\WorkStack\WorkStack\obj\Debug\netcoreapp3.1\WorkStack.csproj.CoreCompileInputs.cache
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\WorkStack\WorkStack\bin\Debug\netcoreapp3.1\WorkStack.exe
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\WorkStack\WorkStack\bin\Debug\netcoreapp3.1\WorkStack.deps.json
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\WorkStack\WorkStack\bin\Debug\netcoreapp3.1\WorkStack.runtimeconfig.json
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\WorkStack\WorkStack\bin\Debug\netcoreapp3.1\WorkStack.runtimeconfig.dev.json
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\WorkStack\WorkStack\bin\Debug\netcoreapp3.1\WorkStack.dll
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\WorkStack\WorkStack\bin\Debug\netcoreapp3.1\WorkStack.pdb
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\WorkStack\WorkStack\obj\Debug\netcoreapp3.1\WorkStack.dll
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\WorkStack\WorkStack\obj\Debug\netcoreapp3.1\WorkStack.pdb
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\WorkStack\WorkStack\obj\Debug\netcoreapp3.1\WorkStack.genruntimeconfig.cache
