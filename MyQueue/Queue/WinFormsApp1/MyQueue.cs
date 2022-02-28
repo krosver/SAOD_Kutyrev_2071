@@ -44,12 +44,23 @@ namespace WinFormsApp1
         }
         public T[] ToArray()
         {
-            int current;
+            int current=0;
             int current_mas_out = currentOut;
             if (currentIn > currentOut)
                 current = currentIn - currentOut;
             else
-                current = 0;
+            {
+                current++;
+                while (current_mas_out != currentIn)
+                {
+                    current++;
+                    if (current_mas_out == arr.Length - 1)
+                        current_mas_out = 0;
+                    else
+                        current_mas_out++;
+                }
+            }
+            current_mas_out = currentOut;
             T[] mas = new T[current];
             for (int i = 0; i <= current - 1; i++)
             {
