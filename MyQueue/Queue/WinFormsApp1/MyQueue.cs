@@ -8,6 +8,7 @@ namespace WinFormsApp1
     {
         private int currentIn;
         private int currentOut;
+        private int current;
         public T[] arr;
         public MyQueue(int size)
         {
@@ -26,17 +27,20 @@ namespace WinFormsApp1
             else
             {
                 arr[currentIn] = val;
-                currentIn++;
             }
+            currentIn++;
+            current++;
+
         }
         public T Dequeue()
         {
             T ret = arr[currentOut];
-            if (currentOut <= arr.Length)
-                currentOut++;
-            else
+            currentOut++;
+            if (currentOut >= arr.Length)
                 currentOut = 0;
+            current--;
             return ret;
+            
         }
         public T Peek()
         {
@@ -44,23 +48,7 @@ namespace WinFormsApp1
         }
         public T[] ToArray()
         {
-            int current=0;
             int current_mas_out = currentOut;
-            if (currentIn > currentOut)
-                current = currentIn - currentOut;
-            else
-            {
-                current++;
-                while (current_mas_out != currentIn)
-                {
-                    current++;
-                    if (current_mas_out == arr.Length - 1)
-                        current_mas_out = 0;
-                    else
-                        current_mas_out++;
-                }
-            }
-            current_mas_out = currentOut;
             T[] mas = new T[current];
             for (int i = 0; i <= current - 1; i++)
             {
