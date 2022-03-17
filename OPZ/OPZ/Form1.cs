@@ -46,15 +46,15 @@ namespace OPZ
                 {
                     if (number != "")
                     {
-                        new_opz.Enqueue(number);
+                        new_opz.addStack(number);
                         number = "";
                     }
-                    new_opz.Enqueue(Convert.ToString(i));
+                    new_opz.addStack(Convert.ToString(i));
                 }
             }
             if (number != "")
             {
-                new_opz.Enqueue(number);
+                new_opz.addStack(number);
             }
         }
 
