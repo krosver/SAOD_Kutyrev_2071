@@ -80,8 +80,11 @@ namespace OPZ
             }
             while (inStack >= 0)
             {
-                opz_queue[inQueue] = opz_stack[inStack];
-                inQueue++;
+                if (opz_stack[inStack] != null)
+                {
+                    opz_queue[inQueue] = opz_stack[inStack];
+                    inQueue++;
+                }
                 inStack--;
             }
             return opz_queue;
