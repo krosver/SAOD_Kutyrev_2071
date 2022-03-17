@@ -30,11 +30,12 @@ namespace OPZ
                 tb_opz.Text += i;
                 tb_opz.Text += " ";
             }
+            
+            tb_answer.Text = new_opz.Answer();
         }
 
         private void add_formula(string formula)
         {
-
             string number = "";
             foreach (char i in formula)
             {

@@ -24,12 +24,10 @@ namespace OPZ
             int inStack = 0;
             int inQueue = 0;
             opz_queue = new string[current];
-            int Num;
             for (int s = 0; s<current;s++)
-            //foreach (string i in stack)
             {
                 string i = stack[s];
-                if (int.TryParse(i, out Num)) // проверка на число
+                if (int.TryParse(i, out int Num)) // проверка на число
                 {
                     opz_queue[inQueue] = i;
                     inQueue++;
@@ -53,7 +51,7 @@ namespace OPZ
                         }
                         else
                         {
-                            if (i == ")")
+                            if (i == ")") // проверка на скобку
                             {
                                 inStack--;
                                 while (opz_stack[inStack] != "(")
@@ -65,7 +63,7 @@ namespace OPZ
                                 }
                                 //opz_stack[inStack] = i;
                             }
-                            else
+                            else 
                             {
                                 opz_queue[inQueue] = opz_stack[inStack-1];
                                 inQueue++;
@@ -78,7 +76,7 @@ namespace OPZ
 
                 }
             }
-            while (inStack >= 0)
+            while (inStack >= 0) // выводит все из стека
             {
                 if (opz_stack[inStack] != null)
                 {
@@ -89,6 +87,61 @@ namespace OPZ
             }
             return opz_queue;
         }
+
+        public string Answer()
+        {
+            opz_stack = new string[current];
+            int inStack = 0;
+            for (int i=0; i<opz_queue.Length;i++)
+            {
+                if (opz_queue[i] != null)
+                {
+                    if (!int.TryParse(opz_queue[i], out int Num))
+                    {
+                        int first = Convert.ToInt32(opz_stack[inStack - 2]);
+                        int second = Convert.ToInt32(opz_stack[inStack - 1]);
+                        int operation;
+                        if (opz_queue[i] == "+")
+                        {
+                            operation = first + second;
+                            opz_stack[inStack - 2] = Convert.ToString(operation);
+                            inStack--;
+                        }
+                        if (opz_queue[i] == "-")
+                        {
+                            operation = first - second;
+                            opz_stack[inStack - 2] = Convert.ToString(operation);
+                            inStack--;
+                        }
+                        if (opz_queue[i] == "*")
+                        {
+                            operation = first * second;
+                            opz_stack[inStack - 2] = Convert.ToString(operation);
+                            inStack--;
+                        }
+                        if (opz_queue[i] == "/")
+                        {
+                            operation = first / second;
+                            opz_stack[inStack - 2] = Convert.ToString(operation);
+                            inStack--;
+                        }
+                        if (opz_queue[i] == "^")
+                        {
+                            operation = Convert.ToInt32(Math.Pow(Convert.ToDouble(first), Convert.ToDouble(second)));
+                            opz_stack[inStack - 2] = Convert.ToString(operation);
+                            inStack--;
+                        }
+                    }
+                    else
+                    {
+                        opz_stack[inStack] = opz_queue[i];
+                        inStack++;
+                    }
+                }
+
+            }
+            return opz_stack[0];
+        }
         public void addStack(string val) // начальный массив
         {
             stack[current] = val;
@@ -97,16 +150,12 @@ namespace OPZ
         public int priority(string sign) // выставляет приоритеты
         {
             int volume = 0;
-            //if (sign == ")")
-            //{ volume = 0; }
             if (sign == "+" || sign == "-" )
             { volume = 1; }
             if (sign == "*" || sign == "/")
             { volume = 2; }
             if (sign == "^")
             { volume = 3; }
-            //if (sign == "(")
-            //{ volume = 4; }
 
             return volume;
         }
