@@ -1,0 +1,15 @@
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\OPZ\OPZ\obj\Debug\netcoreapp3.1\OPZ.csprojAssemblyReference.cache
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\OPZ\OPZ\obj\Debug\netcoreapp3.1\OPZ.Form1.resources
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\OPZ\OPZ\obj\Debug\netcoreapp3.1\OPZ.csproj.GenerateResource.cache
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\OPZ\OPZ\obj\Debug\netcoreapp3.1\OPZ.AssemblyInfoInputs.cache
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\OPZ\OPZ\obj\Debug\netcoreapp3.1\OPZ.AssemblyInfo.cs
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\OPZ\OPZ\obj\Debug\netcoreapp3.1\OPZ.csproj.CoreCompileInputs.cache
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\OPZ\OPZ\bin\Debug\netcoreapp3.1\OPZ.exe
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\OPZ\OPZ\bin\Debug\netcoreapp3.1\OPZ.deps.json
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\OPZ\OPZ\bin\Debug\netcoreapp3.1\OPZ.runtimeconfig.json
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\OPZ\OPZ\bin\Debug\netcoreapp3.1\OPZ.runtimeconfig.dev.json
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\OPZ\OPZ\bin\Debug\netcoreapp3.1\OPZ.dll
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\OPZ\OPZ\bin\Debug\netcoreapp3.1\OPZ.pdb
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\OPZ\OPZ\obj\Debug\netcoreapp3.1\OPZ.dll
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\OPZ\OPZ\obj\Debug\netcoreapp3.1\OPZ.pdb
+C:\Users\Kirill\Desktop\university\САОД\SAOD_Kutyrev_2071\OPZ\OPZ\obj\Debug\netcoreapp3.1\OPZ.genruntimeconfig.cache
