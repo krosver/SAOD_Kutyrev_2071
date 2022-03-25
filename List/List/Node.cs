@@ -6,8 +6,8 @@ namespace List
 {
     class Node<T>
     {
-        T val;
-        Node<T> prev;
-        Node<T> next;
+        public T val;
+        public Node<T> prev;
+        public Node<T> next;
     }
 }
