@@ -11,6 +11,7 @@ namespace List
         int count;
         T[] arr; 
         Node<T> current;
+
         public void Append(T val)
         {
             current = new Node<T>();
@@ -73,25 +74,125 @@ namespace List
         }
         public T Find(T val)
         {
-            Node<T> elem = first;
-            for (int i = 0; i < count; i++)
+            Node<T> elem = FindNode(val);
+            if (elem == null)
             {
-                //if (elem.val == val)
-                //{
-
-                //}
+                throw new Exception("NotFoundElement");
             }
-            return val;
+            return elem.val;
         }
-        //T FindByIndex(int index)
-        //{
-        //}
-        //bool Remove(T val)
-        //{
-        //}
-        //bool RemoveByIndex(int index)
-        //{
-        //}
+        Node<T> FindNode(T val)
+        {
+            Node<T> elem = first;
+            do
+            {
+                if (elem.val.Equals(val))
+                {
+                    break;
+                }
+                else
+                {
+                    elem = elem.next;
+                }
+            }
+            while (elem != null);
+            return elem;
+        }
+
+        public T FindByIndex(int index)
+        {
+            if (index >= count)
+            {
+                throw new IndexOutOfRangeException("IndexOutOfRangeException");
+            }
+            Node<T> elem = ByIndexNode(index);
+            return elem.val;
+        }
+        Node<T> ByIndexNode(int index)
+        {
+            Node<T> elem = first;
+            for (int i = 0; i < index; i++)
+            {
+                elem = elem.next;
+            }
+            return elem;
+        }
+
+
+        public void Remove(T val)
+        {
+            Node<T> elem = FindNode(val);
+            if (elem == null)
+            {
+                throw new Exception("NotFoundElement");
+            }
+            if (first == elem || last == elem)
+            {
+                if (first == elem && last == elem)
+                {
+                    first = null;
+                    last = null;
+                    elem = null;
+                }
+                else
+                {
+                    if (elem == first)
+                    {
+                        elem.next.prev = null;
+                        first = elem.next;
+                    }
+                    if (elem == last)
+                    {
+                        elem.prev.next = null;
+                        last = elem.prev;
+                    }
+                }
+            }
+            else
+            {
+                elem.prev.next = elem.next;
+                elem.next.prev = elem.prev;
+            }
+
+            count--;
+        }
+        public void RemoveByIndex(int index)
+        {
+            if (index >= count)
+            {
+                throw new IndexOutOfRangeException("IndexOutOfRangeException");
+            }
+            Node<T> elem = ByIndexNode(index);
+            if (first == elem || last == elem)
+            {
+                if (first == elem && last == elem)
+                {
+                    first = null;
+                    last = null;
+                    elem = null;
+                }
+                else
+                {
+                    if (elem == first)
+                    {
+                        elem.next.prev = null;
+                        first = elem.next;
+                    }
+                    if (elem == last)
+                    {
+                        elem.prev.next = null;
+                        last = elem.prev;
+                    }
+                }
+            }
+            else
+            {
+                elem.prev.next = elem.next;
+                elem.next.prev = elem.prev;
+            }
+
+            count--;
+        }
 
         public T[] ToArray()
         {
@@ -104,6 +205,19 @@ namespace List
             }
             return arr;
         }
+        //public T this[int index]
+        //{
+        //    set
+        //    {
+        //        array[index] = value;
+        //    }
+
+        //    get
+        //    {
+        //        return arr[index];
+        //    }
+        //}
+
 
     }
 }

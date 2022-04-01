@@ -44,6 +44,8 @@ namespace List
             this.tb_remove = new System.Windows.Forms.TextBox();
             this.bt_remove_index = new System.Windows.Forms.Button();
             this.tb_remove_index = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // listBox1
@@ -131,6 +133,7 @@ namespace List
             this.bt_find_index.TabIndex = 10;
             this.bt_find_index.Text = "find(index)";
             this.bt_find_index.UseVisualStyleBackColor = true;
+            this.bt_find_index.Click += new System.EventHandler(this.bt_find_index_Click);
             // 
             // tb_find_index
             // 
@@ -147,6 +150,7 @@ namespace List
             this.br_remove.TabIndex = 12;
             this.br_remove.Text = "remove(value)";
             this.br_remove.UseVisualStyleBackColor = true;
+            this.br_remove.Click += new System.EventHandler(this.br_remove_Click);
             // 
             // tb_remove
             // 
@@ -163,6 +167,7 @@ namespace List
             this.bt_remove_index.TabIndex = 14;
             this.bt_remove_index.Text = "remove(index)";
             this.bt_remove_index.UseVisualStyleBackColor = true;
+            this.bt_remove_index.Click += new System.EventHandler(this.bt_remove_index_Click);
             // 
             // tb_remove_index
             // 
@@ -171,11 +176,27 @@ namespace List
             this.tb_remove_index.Size = new System.Drawing.Size(125, 27);
             this.tb_remove_index.TabIndex = 13;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(462, 142);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(326, 27);
+            this.textBox1.TabIndex = 15;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(462, 188);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(326, 27);
+            this.textBox2.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.bt_remove_index);
             this.Controls.Add(this.tb_remove_index);
             this.Controls.Add(this.br_remove);
@@ -215,6 +236,8 @@ namespace List
         private System.Windows.Forms.TextBox tb_remove;
         private System.Windows.Forms.Button bt_remove_index;
         private System.Windows.Forms.TextBox tb_remove_index;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
