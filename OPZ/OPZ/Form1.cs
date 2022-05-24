@@ -59,5 +59,9 @@ namespace OPZ
             }
         }
 
+        private void tb_formula_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

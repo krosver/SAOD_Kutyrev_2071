@@ -41,6 +41,8 @@ namespace OPZ
             this.tb_formula.Name = "tb_formula";
             this.tb_formula.Size = new System.Drawing.Size(220, 27);
             this.tb_formula.TabIndex = 0;
+            this.tb_formula.Text = "(6/2)*(8+9)";
+            this.tb_formula.TextChanged += new System.EventHandler(this.tb_formula_TextChanged);
             // 
             // tb_opz
             // 

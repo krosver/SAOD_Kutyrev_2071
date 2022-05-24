@@ -43,7 +43,7 @@ namespace OPZ
                     else
                     {
                         priority_second = priority(i); // проверка приоритета
-                        if (priority_second > priority_first)
+                        if (priority_second >= priority_first)
                         {
                             opz_stack[inStack] = i;
                             priority_first = priority_second;
@@ -61,6 +61,7 @@ namespace OPZ
                                     inQueue++;
                                     inStack--;
                                 }
+                               
                                 //opz_stack[inStack] = i;
                             }
                             else 
@@ -80,8 +81,11 @@ namespace OPZ
             {
                 if (opz_stack[inStack] != null)
                 {
-                    opz_queue[inQueue] = opz_stack[inStack];
-                    inQueue++;
+                    if (opz_stack[inStack] != "(")
+                    {
+                        opz_queue[inQueue] = opz_stack[inStack];
+                        inQueue++;
+                    }
                 }
                 inStack--;
             }
